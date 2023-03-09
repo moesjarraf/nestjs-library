@@ -7,7 +7,7 @@ export class ConfigService extends CommonConfigService {
   get captcha() {
     return {
       site_key: this.get<string>('CAPTCHA_SITE_KEY'),
-      secret_key: this.get<string>('CAPTCHA_SITE_KEY'),
+      secret_key: this.get<string>('CAPTCHA_SECRET_KEY'),
       enabled: boolean(this.get<string>('CAPTCHA_ENABLED')),
     };
   }
@@ -17,7 +17,7 @@ export class ConfigService extends CommonConfigService {
       url: this.get<string>('KEYCLOAK_URL') || 'http://127.0.0.1:8080',
       realm: this.get<string>('KEYCLOAK_REALM') || 'nestjs',
       client: this.get<string>('KEYCLOAK_CLIENT') || 'nestjs',
-      secret: this.get<string>('KEYCLOAK_SECRET'),
+      secret: this.get<string>('KEYCLOAK_SECRET') || 'secret',
     };
   }
 }
