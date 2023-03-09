@@ -37,9 +37,9 @@ The available suffixes can be found below, and are loaded in the order as they a
 '.env',
 ```
 
-### Recaptcha v2
+The default configuration for each sub module can be found below, and can be changed by modifying the env variables.
 
-The default configuration can be found below, and can be changed by modifying the env variables.
+### Recaptcha v2
 
 ```bash
 CAPTCHA_SITE_KEY=
@@ -50,7 +50,6 @@ CAPTCHA_ENABLED=
 ### Keycloak
 
 An example keycloak realm configuration can be found [here](https://github.com/moesjarraf/nestjs-example/blob/master/backend/realm-export.json).
-The default configuration can be found below, and can be changed by modifying the env variables.
 
 ```bash
 KEYCLOAK_URL=http://127.0.0.1:8080
